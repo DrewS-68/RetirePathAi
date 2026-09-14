@@ -1,0 +1,57 @@
+========================================
+RETIREPATH - QUICK FIX FOR PARKED DOMAINS
+========================================
+
+FILE TO EDIT IN FIGMA MAKE:
+/supabase/functions/server/data-enrichment.ts
+
+FIND THIS (around line 391-401):
+-----------------------------------
+        if (isParked) {
+          console.log(`⚠️ Parked domain detected for ${village.name}: ${village.website}`);
+          console.log(`  🚨 Trigger keyword: "${parkedIndicatorFound}"`);
+          results.push({
+            villageId: village.id,
+            name: village.name,
+            status: 'skipped',
+            reason: `Parked domain detected (keyword: "${parkedIndicatorFound}")`,
+            website: village.website
+          });
+          continue;
+        }
+
+CHANGE IT TO THIS:
+-----------------------------------
+        if (isParked) {
+          console.log(`⚠️ Parked domain detected for ${village.name}: ${village.website}`);
+          console.log(`  🚨 Trigger keyword: "${parkedIndicatorFound}"`);
+          await markVillageAsProcessed(village.id, 'skipped', `Parked domain detected (keyword: "${parkedIndicatorFound}")`);
+          results.push({
+            villageId: village.id,
+            name: village.name,
+            status: 'skipped',
+            reason: `Parked domain detected (keyword: "${parkedIndicatorFound}")`,
+            website: village.website
+          });
+          continue;
+        }
+
+WHAT CHANGED:
+✅ Added ONE new line after the second console.log
+✅ The new line is: await markVillageAsProcessed(village.id, 'skipped', `Parked domain detected (keyword: "${parkedIndicatorFound}")`);
+
+HOW TO EDIT IN FIGMA MAKE:
+1. Click on "Files" in left sidebar
+2. Navigate to: supabase > functions > server > data-enrichment.ts
+3. Click to open the file
+4. Use Ctrl+F to search for: "Trigger keyword"
+5. You'll find line 393
+6. Click at the END of line 393
+7. Press ENTER to create a new line 394
+8. Type (or paste) this with proper spacing:
+          await markVillageAsProcessed(village.id, 'skipped', `Parked domain detected (keyword: "${parkedIndicatorFound}")`);
+9. Click SAVE (or Ctrl+S)
+
+========================================
+THAT'S IT! The fix is done!
+========================================

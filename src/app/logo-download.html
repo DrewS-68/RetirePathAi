@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetirePath Logo Download</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #1B4332 0%, #2D6A4F 100%);
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 500px;
+        }
+        h1 {
+            color: #1B4332;
+            margin-top: 0;
+        }
+        .logo-display {
+            background: #f3f4f6;
+            border-radius: 12px;
+            padding: 40px;
+            margin: 30px 0;
+            border: 2px dashed #d1d5db;
+        }
+        .logo-display img {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .instructions {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: left;
+            border-radius: 8px;
+            color: #78350f;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .instructions strong {
+            color: #92400e;
+        }
+        .download-btn {
+            background: #2D6A4F;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        .download-btn:hover {
+            background: #1B4332;
+        }
+        .url-box {
+            background: #f9fafb;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            padding: 10px;
+            margin: 15px 0;
+            font-family: monospace;
+            font-size: 13px;
+            word-break: break-all;
+            color: #374151;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 RetirePath Logo</h1>
+        
+        <div class="logo-display">
+            <img id="logo" alt="RetirePath Logo" />
+        </div>
+
+        <div class="instructions">
+            <strong>📥 How to Download:</strong><br>
+            1. <strong>Right-click</strong> on the logo above<br>
+            2. Select <strong>"Save Image As..."</strong><br>
+            3. Save as: <code>RetirePath-Logo.png</code><br>
+            4. Use in your marketing materials!
+        </div>
+
+        <a href="#" id="downloadLink" class="download-btn" download="RetirePath-Logo.png">
+            ⬇️ Download Logo
+        </a>
+
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
+            <p style="color: #6b7280; font-size: 14px; margin: 5px 0;">
+                <strong>Logo File:</strong>
+            </p>
+            <div class="url-box" id="logoUrl">Loading...</div>
+        </div>
+    </div>
+
+    <script type="module">
+        import logoImage from 'figma:asset/33ed1b78ef522a87437a8962b920d3992a5fd1d3.png';
+        
+        // Display the logo
+        const logoElement = document.getElementById('logo');
+        logoElement.src = logoImage;
+        
+        // Set up download link
+        const downloadLink = document.getElementById('downloadLink');
+        downloadLink.href = logoImage;
+        
+        // Display the URL
+        const logoUrlElement = document.getElementById('logoUrl');
+        logoUrlElement.textContent = logoImage;
+    </script>
+</body>
+</html>

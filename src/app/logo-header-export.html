@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RetirePath Logo - Header Right</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      background: #f5f5f5;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    
+    .logo-container {
+      background: white;
+      padding: 40px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .logo-header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      justify-content: flex-end;
+    }
+    
+    .logo-text {
+      text-align: right;
+    }
+    
+    .logo-text h1 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: 700;
+      color: #1f2937;
+    }
+    
+    .logo-text p {
+      margin: 8px 0 0 0;
+      font-size: 14px;
+      color: #6b7280;
+    }
+    
+    .logo-icon {
+      width: 64px;
+      height: 64px;
+      background: #1e40af;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+    
+    .instructions {
+      background: white;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    
+    .instructions h3 {
+      margin-top: 0;
+      color: #2B5273;
+    }
+    
+    .instructions ol {
+      padding-left: 24px;
+    }
+    
+    .instructions li {
+      margin: 8px 0;
+      line-height: 1.6;
+    }
+    
+    .button {
+      display: inline-block;
+      background: #2B5273;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 16px;
+      cursor: pointer;
+      border: none;
+      font-size: 14px;
+    }
+    
+    .button:hover {
+      background: #1f3d56;
+    }
+    
+    .preview-note {
+      background: #e3f2fd;
+      border-left: 4px solid #2196F3;
+      padding: 16px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+    
+    .size-options {
+      display: flex;
+      gap: 12px;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🎨 RetirePath Header Logo (Right-Aligned)</h2>
+    
+    <div class="preview-note">
+      <strong>📋 Preview:</strong> This is how your logo will look on the right side of a header.
+    </div>
+    
+    <div class="logo-container" id="logoContainer">
+      <div class="logo-header">
+        <div class="logo-text">
+          <h1>RetirePath</h1>
+          <p>Your Journey to the Perfect Retirement Village</p>
+        </div>
+        <div class="logo-icon">R</div>
+      </div>
+    </div>
+    
+    <div class="instructions">
+      <h3>📥 How to Save This Logo:</h3>
+      <ol>
+        <li><strong>Option 1 - Screenshot (Easiest):</strong>
+          <ul>
+            <li>Take a screenshot of the white box above</li>
+            <li>Crop to just the logo area</li>
+            <li>Save as PNG</li>
+          </ul>
+        </li>
+        <li><strong>Option 2 - Right-Click (If you have the actual logo image):</strong>
+          <ul>
+            <li>Right-click on the entire logo area</li>
+            <li>Select "Save Image As..."</li>
+            <li>Save as PNG</li>
+          </ul>
+        </li>
+        <li><strong>Option 3 - Use in Your App:</strong>
+          <ul>
+            <li>Import the component: <code>import { LogoHeaderRight } from './components/LogoHeaderRight';</code></li>
+            <li>Use it: <code>&lt;LogoHeaderRight /&gt;</code></li>
+            <li>Export as image from your design tool</li>
+          </ul>
+        </li>
+      </ol>
+      
+      <h3>✅ Perfect For:</h3>
+      <ul>
+        <li>Right-aligned headers on documents</li>
+        <li>Letterhead (top-right corner)</li>
+        <li>Email signatures (right-aligned)</li>
+        <li>Invoice headers</li>
+        <li>Report covers</li>
+      </ul>
+      
+      <h3>🎨 Customization:</h3>
+      <p>If you need different sizes or colors, let me know and I can create variations!</p>
+      
+      <div class="size-options">
+        <button class="button" onclick="changeSize('small')">Small (800px)</button>
+        <button class="button" onclick="changeSize('medium')">Medium (1200px)</button>
+        <button class="button" onclick="changeSize('large')">Large (1600px)</button>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function changeSize(size) {
+      const container = document.getElementById('logoContainer');
+      const sizes = {
+        'small': '800px',
+        'medium': '1200px',
+        'large': '1600px'
+      };
+      container.style.maxWidth = sizes[size];
+      alert('Container resized to ' + sizes[size] + '! Take a screenshot now for ' + size + ' version.');
+    }
+  </script>
+</body>
+</html>

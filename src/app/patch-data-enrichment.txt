@@ -1,0 +1,15 @@
+INSTRUCTION: Add this line after line 393 in /supabase/functions/server/data-enrichment.ts
+
+LINE TO ADD (exactly as shown):
+          await markVillageAsProcessed(village.id, 'skipped', `Parked domain detected (keyword: "${parkedIndicatorFound}")`);
+
+LOCATION: Insert between line 393 and line 394
+
+BEFORE:
+393:           console.log(`  🚨 Trigger keyword: \"${parkedIndicatorFound}\"`);
+394:           results.push({
+
+AFTER:
+393:           console.log(`  🚨 Trigger keyword: \"${parkedIndicatorFound}\"`);
+394:           await markVillageAsProcessed(village.id, 'skipped', `Parked domain detected (keyword: \"${parkedIndicatorFound}\")`);
+395:           results.push({

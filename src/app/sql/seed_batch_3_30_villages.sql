@@ -1,0 +1,260 @@
+-- Batch 3: 30 Additional Retirement Villages - Regional & Coastal Focus
+-- Brings total to 75 villages with expanded regional coverage
+
+INSERT INTO retirement_villages (
+  name,
+  operator,
+  location,
+  suburb,
+  state,
+  postcode,
+  latitude,
+  longitude,
+  village_type,
+  care_level,
+  entry_price_min,
+  entry_price_max,
+  monthly_fees_min,
+  monthly_fees_max,
+  dmf_percentage,
+  amenities,
+  care_services,
+  bedrooms,
+  pet_friendly,
+  total_units,
+  age_restriction,
+  contact_phone,
+  contact_email,
+  website,
+  description,
+  status,
+  source,
+  verified,
+  featured,
+  submitted_at,
+  approved_at
+) VALUES
+
+-- NEW SOUTH WALES - Regional & Coastal (8 villages)
+
+('Estia Health Grafton', 'Estia Health', '15 Dobie Street', 'Grafton', 'NSW', '2460', -29.6833, 152.9333, 'aged-care', 'aged-care', 285000, 445000, 340, 520, 32,
+'["library", "common-room", "garden", "hairdresser", "bbq-area"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care"]'::jsonb,
+ARRAY['1-bed', '2-bed'], false, 76, 55, '02 6642 1111', 'grafton@estiahealth.com.au', 'https://estiahealth.com.au',
+'Regional North Coast aged care in historic Grafton. Caring community atmosphere with gardens and close to Clarence River.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('BaptistCare Cooinda Village', 'BaptistCare NSW & ACT', '88 Marian Street', 'Terrigal', 'NSW', '2260', -33.4483, 151.4450, 'independent', 'independent', 485000, 785000, 460, 720, 28,
+'["pool", "bowling-green", "library", "common-room", "chapel", "bbq-area", "garden"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse"]'::jsonb,
+ARRAY['2-bed', '3-bed'], true, 134, 55, '02 4385 2222', 'cooinda@baptistcare.org.au', 'https://baptistcare.org.au',
+'Premium coastal retirement on the Central Coast. Short walk to Terrigal Beach with pool, bowling green, and ocean views.',
+'approved', 'seed_data', true, true, NOW(), NOW()),
+
+('Villa Vincent Retirement Village', 'RSL LifeCare', '125 Lawrence Hargrave Drive', 'Thirroul', 'NSW', '2515', -34.3167, 150.9167, 'independent', 'independent', 365000, 625000, 380, 600, 30,
+'["pool", "library", "common-room", "bbq-area", "garden", "workshop"]'::jsonb,
+'["emergency-call", "on-site-manager"]'::jsonb,
+ARRAY['2-bed', '3-bed'], true, 98, 55, '02 4268 3333', 'villavincent@rsllifecare.org.au', 'https://rsllifecare.org.au',
+'Coastal village in the Illawarra with mountain and ocean views. Independent villas with pool and close to beaches.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('Catholic Healthcare St Catherine Villa', 'Catholic Healthcare', '45 Mona Vale Road', 'Mona Vale', 'NSW', '2103', -33.6783, 151.3017, 'assisted', 'assisted', 625000, 925000, 600, 880, 26,
+'["pool", "gym", "library", "common-room", "chapel", "hairdresser", "garden"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "transport"]'::jsonb,
+ARRAY['1-bed', '2-bed', '3-bed'], true, 116, 55, '02 9979 4444', 'stcatherine@catholichealthcare.com.au', 'https://catholichealthcare.com.au',
+'Northern Beaches retirement with pool and gym. Close to Mona Vale village, beaches, and Pittwater.',
+'approved', 'seed_data', true, true, NOW(), NOW()),
+
+('IRT Lillian Wells', 'IRT Group', '73 Kinghorne Street', 'Nowra', 'NSW', '2541', -34.8833, 150.6000, 'assisted', 'assisted', 295000, 485000, 330, 530, 32,
+'["bowling-green", "library", "common-room", "bbq-area", "garden"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "transport"]'::jsonb,
+ARRAY['1-bed', '2-bed'], true, 84, 55, '02 4421 5555', 'lillianwells@irt.org.au', 'https://irt.org.au',
+'South Coast retirement village in Nowra. Bowling green, community center, and close to Shoalhaven River.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('Melrose Aged Care Mudgee', 'Melrose', '18 Horatio Street', 'Mudgee', 'NSW', '2850', -32.6000, 149.5833, 'aged-care', 'aged-care', 225000, 385000, 280, 460, 34,
+'["library", "common-room", "garden", "bbq-area"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care"]'::jsonb,
+ARRAY['1-bed', '2-bed'], false, 68, 55, '02 6372 6666', 'mudgee@melrosecare.com.au', 'https://melrosecare.com.au',
+'Regional aged care in wine country. Friendly community in historic Mudgee with gardens and BBQ areas.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('Warrigal Illawarra Shores', 'Warrigal Care', '1 Pioneer Road', 'Shellharbour', 'NSW', '2529', -34.5783, 150.8650, 'independent', 'independent', 395000, 685000, 410, 650, 30,
+'["pool", "gym", "bowling-green", "library", "common-room", "bbq-area", "workshop"]'::jsonb,
+'["emergency-call", "on-site-manager"]'::jsonb,
+ARRAY['2-bed', '3-bed'], true, 148, 55, '02 4295 7777', 'illawarrashores@warrigal.com.au', 'https://warrigal.com.au',
+'Coastal retirement near Shellharbour beaches. Modern village with pool, gym, bowling green, and ocean breezes.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('Anglicare Coffs Harbour', 'Anglicare', '88 Pacific Highway', 'Coffs Harbour', 'NSW', '2450', -30.2967, 153.1167, 'assisted', 'assisted', 325000, 525000, 360, 560, 30,
+'["pool", "library", "common-room", "garden", "bbq-area"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "transport"]'::jsonb,
+ARRAY['1-bed', '2-bed'], true, 92, 55, '02 6652 8888', 'coffsharbour@anglicare.org.au', 'https://anglicare.org.au',
+'Mid North Coast retirement living. Pool, gardens, and close to beaches and banana plantations.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+-- VICTORIA - Regional & Peninsula (7 villages)
+
+('Peninsula Health Mornington', 'Peninsula Health', '55 Bentons Road', 'Mornington', 'VIC', '3931', -38.2167, 145.0333, 'aged-care', 'aged-care', 445000, 685000, 480, 700, 28,
+'["library", "common-room", "garden", "hairdresser", "cafe"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care"]'::jsonb,
+ARRAY['1-bed', '2-bed'], false, 94, 55, '03 5975 1111', 'mornington@peninsulahealth.org.au', 'https://peninsulahealth.org.au',
+'Mornington Peninsula aged care near beaches. Gardens, cafe, and close to Main Street shopping.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('Estia Health Ballarat', 'Estia Health', '125 Victoria Street', 'Ballarat', 'VIC', '3350', -37.5622, 143.8503, 'aged-care', 'aged-care', 295000, 465000, 340, 540, 30,
+'["library", "common-room", "garden", "hairdresser", "bbq-area"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care"]'::jsonb,
+ARRAY['1-bed', '2-bed'], false, 102, 55, '03 5333 2222', 'ballarat@estiahealth.com.au', 'https://estiahealth.com.au',
+'Historic gold rush city aged care. Heritage character with modern facilities and close to Botanical Gardens.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('Benetas Wantirna', 'Benetas', '88 Studfield Road', 'Wantirna', 'VIC', '3152', -37.8500, 145.2167, 'aged-care', 'aged-care', 425000, 625000, 460, 660, 30,
+'["library", "common-room", "garden", "hairdresser", "cafe"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care", "dementia-care"]'::jsonb,
+ARRAY['1-bed', '2-bed'], false, 118, 55, '03 9801 3333', 'wantirna@benetas.com.au', 'https://benetas.com.au',
+'Eastern suburbs Melbourne aged care. Modern facility with dementia care unit and close to Knox Shopping Centre.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('VMCH Wyndham Lodge', 'Villa Maria Catholic Homes', '15 Synnot Street', 'Werribee', 'VIC', '3030', -37.9000, 144.6667, 'aged-care', 'aged-care', 365000, 565000, 400, 600, 30,
+'["library", "common-room", "chapel", "garden", "hairdresser"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care"]'::jsonb,
+ARRAY['1-bed', '2-bed'], false, 86, 55, '03 9742 4444', 'wyndhamlodge@vmch.com.au', 'https://vmch.com.au',
+'Catholic aged care in Werribee. Chapel, gardens, and caring community atmosphere.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('Gippsland Aged Care Services Sale', 'GACS', '45 Macarthur Street', 'Sale', 'VIC', '3850', -38.1000, 147.0667, 'aged-care', 'aged-care', 265000, 425000, 310, 490, 32,
+'["library", "common-room", "garden", "bbq-area"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care"]'::jsonb,
+ARRAY['1-bed', '2-bed'], false, 72, 55, '03 5143 5555', 'sale@gacs.org.au', 'https://gacs.org.au',
+'Regional Gippsland aged care. Community-owned facility with friendly staff and gardens.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('Carinity Aged Care Colac', 'Carinity', '88 Queen Street', 'Colac', 'VIC', '3250', -38.3333, 143.5833, 'aged-care', 'aged-care', 245000, 395000, 290, 470, 34,
+'["library", "common-room", "garden", "chapel", "bbq-area"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care"]'::jsonb,
+ARRAY['1-bed', '2-bed'], false, 64, 55, '03 5231 6666', 'colac@carinity.org.au', 'https://carinity.org.au',
+'South-west Victoria aged care in Colac. Chapel, gardens, and close to Lake Colac.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('Ryman Healthcare Weary Dunlop', 'Ryman Healthcare', '280 Hoppers Lane', 'Werribee', 'VIC', '3030', -37.8833, 144.6500, 'aged-care', 'aged-care', 465000, 865000, 500, 840, 28,
+'["pool", "gym", "bowling-green", "cinema", "library", "common-room", "restaurant", "hairdresser", "cafe", "garden"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care", "dementia-care"]'::jsonb,
+ARRAY['1-bed', '2-bed', '3-bed'], true, 224, 55, '03 8734 7777', 'wearydunlop@rymanhealthcare.com', 'https://rymanhealthcare.com',
+'Large premium retirement village in Werribee. Pool, gym, bowling green, cinema, restaurant. Full continuum of care.',
+'approved', 'seed_data', true, true, NOW(), NOW()),
+
+-- QUEENSLAND - Regional & Tropical North (7 villages)
+
+('Bolton Clarke Eventide', 'Bolton Clarke', '15 Lindsay Street', 'Toowoomba', 'QLD', '4350', -27.5667, 151.9500, 'aged-care', 'aged-care', 295000, 475000, 340, 540, 30,
+'["library", "common-room", "chapel", "garden", "hairdresser"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care"]'::jsonb,
+ARRAY['1-bed', '2-bed'], false, 98, 55, '07 4632 1111', 'eventide@boltonclarke.com.au', 'https://boltonclarke.com.au',
+'Toowoomba aged care with over 100 years of service. Chapel, gardens, and strong community roots.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('Opal Aged Care Townsville', 'Opal Aged Care', '88 Kings Road', 'Hyde Park', 'QLD', '4812', -19.3033, 146.8017, 'aged-care', 'aged-care', 325000, 525000, 360, 560, 30,
+'["pool", "library", "common-room", "garden", "hairdresser", "cafe"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care"]'::jsonb,
+ARRAY['1-bed', '2-bed'], false, 106, 55, '07 4775 2222', 'townsville@opalcare.com.au', 'https://opalcare.com.au',
+'Tropical North Queensland aged care. Pool, gardens, and close to Townsville Hospital.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('Regis Aged Care Cairns', 'Regis Aged Care', '45 Lake Street', 'Cairns', 'QLD', '4870', -16.9186, 145.7781, 'aged-care', 'aged-care', 385000, 585000, 400, 600, 28,
+'["pool", "library", "common-room", "garden", "hairdresser", "cafe"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care"]'::jsonb,
+ARRAY['1-bed', '2-bed'], false, 94, 55, '07 4051 3333', 'cairns@regis.com.au', 'https://regis.com.au',
+'Far North Queensland tropical aged care. Pool, gardens, and close to Esplanade and reef tours.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('Adventist Aged Care Riverview', 'Adventist Aged Care', '125 Queens Road', 'Ipswich', 'QLD', '4305', -27.6167, 152.7667, 'aged-care', 'aged-care', 285000, 465000, 330, 530, 32,
+'["library", "common-room", "chapel", "garden", "hairdresser"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care"]'::jsonb,
+ARRAY['1-bed', '2-bed'], false, 88, 55, '07 3281 4444', 'riverview@adventistcare.org.au', 'https://adventistcare.org.au',
+'Ipswich aged care with river views. Chapel, gardens, and caring faith-based community.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('Carinity Aged Care Brookfield', 'Carinity', '15 Gold Creek Road', 'Brookfield', 'QLD', '4069', -27.4983, 152.9167, 'aged-care', 'aged-care', 425000, 625000, 460, 660, 28,
+'["pool", "library", "common-room", "chapel", "garden", "hairdresser"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care"]'::jsonb,
+ARRAY['1-bed', '2-bed'], false, 102, 55, '07 3374 5555', 'brookfield@carinity.org.au', 'https://carinity.org.au',
+'Leafy Brisbane western suburbs aged care. Pool, chapel, and bushland setting.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('Southern Cross Care Noosa', 'Southern Cross Care QLD', '88 Eenie Creek Road', 'Noosaville', 'QLD', '4566', -26.3950, 153.0550, 'assisted', 'assisted', 485000, 785000, 500, 760, 28,
+'["pool", "gym", "library", "common-room", "bbq-area", "garden"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "transport"]'::jsonb,
+ARRAY['2-bed', '3-bed'], true, 112, 55, '07 5449 6666', 'noosa@scrosscc.com.au', 'https://scrosscc.com.au',
+'Premium Sunshine Coast retirement near Noosa River. Pool, gym, and close to beaches and Hastings Street.',
+'approved', 'seed_data', true, true, NOW(), NOW()),
+
+('Anglicare Burleigh Heads', 'Anglicare Southern Queensland', '45 Tallebudgera Creek Road', 'Burleigh Heads', 'QLD', '4220', -28.1017, 153.4450, 'independent', 'independent', 525000, 825000, 520, 780, 26,
+'["pool", "gym", "bowling-green", "library", "common-room", "bbq-area", "workshop"]'::jsonb,
+'["emergency-call", "on-site-manager"]'::jsonb,
+ARRAY['2-bed', '3-bed'], true, 138, 55, '07 5520 7777', 'burleighheads@anglicaresq.org.au', 'https://anglicaresq.org.au',
+'Gold Coast beachside retirement. Pool, gym, bowling green, and short walk to famous Burleigh Beach.',
+'approved', 'seed_data', true, true, NOW(), NOW()),
+
+-- SOUTH AUSTRALIA - Regional & Adelaide (4 villages)
+
+('Aged Care Gumeracha', 'ACH Group', '12 Albert Street', 'Gumeracha', 'SA', '5233', -34.8167, 138.8833, 'aged-care', 'aged-care', 225000, 375000, 280, 460, 34,
+'["library", "common-room", "garden", "bbq-area"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care"]'::jsonb,
+ARRAY['1-bed', '2-bed'], false, 58, 55, '08 8389 1111', 'gumeracha@ach.org.au', 'https://ach.org.au',
+'Adelaide Hills aged care in historic Gumeracha. Rural setting with gardens and mountain views.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('Southern Cross Care Marion', 'Southern Cross Care SA', '275 Sturt Road', 'Seacombe Gardens', 'SA', '5047', -35.0317, 138.5217, 'aged-care', 'aged-care', 425000, 625000, 460, 660, 28,
+'["library", "common-room", "garden", "hairdresser", "cafe"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care", "dementia-care"]'::jsonb,
+ARRAY['1-bed', '2-bed'], false, 108, 55, '08 8276 2222', 'marion@scsa.org.au', 'https://scsa.org.au',
+'Southern Adelaide aged care near Westfield Marion. Modern facility with dementia unit and cafe.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('Japara Kirralee', 'Japara Healthcare', '88 Payneham Road', 'Stepney', 'SA', '5069', -34.9050, 138.6267, 'aged-care', 'aged-care', 465000, 685000, 500, 720, 28,
+'["library", "common-room", "garden", "hairdresser", "cafe"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care"]'::jsonb,
+ARRAY['1-bed', '2-bed'], false, 96, 55, '08 8362 3333', 'kirralee@japara.com.au', 'https://japara.com.au',
+'Inner Adelaide aged care on Payneham Road. Close to city, cafes, and excellent transport.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('Bene Aged Care Victor Harbor', 'Bene', '45 Bay Road', 'Victor Harbor', 'SA', '5211', -35.5517, 138.6183, 'aged-care', 'aged-care', 285000, 465000, 330, 530, 30,
+'["library", "common-room", "garden", "hairdresser", "bbq-area"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care"]'::jsonb,
+ARRAY['1-bed', '2-bed'], false, 82, 55, '08 8552 4444', 'victorharbor@benecare.com.au', 'https://benecare.com.au',
+'Fleurieu Peninsula coastal aged care. Ocean views, gardens, and close to beaches and causeway.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+-- WESTERN AUSTRALIA - Regional & Coastal (2 villages)
+
+('Regis Aged Care Mandurah', 'Regis Aged Care', '88 Gordon Road', 'Greenfields', 'WA', '6210', -32.5500, 115.7333, 'aged-care', 'aged-care', 365000, 565000, 400, 600, 30,
+'["pool", "library", "common-room", "garden", "hairdresser", "cafe"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care"]'::jsonb,
+ARRAY['1-bed', '2-bed'], false, 104, 55, '08 9535 1111', 'mandurah@regis.com.au', 'https://regis.com.au',
+'Coastal aged care in Mandurah. Pool, gardens, and close to waterways and shopping.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+('Bethanie Gwelup', 'Bethanie Group', '15 Gwendoline Drive', 'Gwelup', 'WA', '6018', -31.8667, 115.7967, 'independent', 'independent', 385000, 625000, 400, 620, 30,
+'["pool", "gym", "library", "common-room", "bbq-area", "workshop"]'::jsonb,
+'["emergency-call", "on-site-manager"]'::jsonb,
+ARRAY['2-bed', '3-bed'], true, 122, 55, '08 9447 2222', 'gwelup@bethanie.com.au', 'https://bethanie.com.au',
+'Northern Perth retirement living. Modern villas with pool, gym, and close to shopping centers.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+-- TASMANIA (1 village)
+
+('Glenview Community Care', 'Glenview', '45 Risdon Road', 'Lutana', 'TAS', '7009', -42.8400, 147.3117, 'aged-care', 'aged-care', 265000, 425000, 310, 490, 32,
+'["library", "common-room", "garden", "hairdresser"]'::jsonb,
+'["emergency-call", "on-site-manager", "visiting-nurse", "meals", "housekeeping", "personal-care", "24hr-care"]'::jsonb,
+ARRAY['1-bed', '2-bed'], false, 76, 55, '03 6272 1111', 'lutana@glenview.org.au', 'https://glenview.org.au',
+'Hobart northern suburbs aged care. Community-focused facility with gardens and close to shops.',
+'approved', 'seed_data', true, false, NOW(), NOW()),
+
+-- AUSTRALIAN CAPITAL TERRITORY (1 village)
+
+('IRT Kangara Waters', 'IRT Group', '20 Henry Rolland Boulevard', 'Belconnen', 'ACT', '2617', -35.2383, 149.0633, 'independent', 'independent', 485000, 785000, 480, 720, 28,
+'["pool", "gym", "bowling-green", "library", "common-room", "workshop", "bbq-area"]'::jsonb,
+'["emergency-call", "on-site-manager"]'::jsonb,
+ARRAY['2-bed', '3-bed'], true, 156, 55, '02 6253 1111', 'kangarawaters@irt.org.au', 'https://irt.org.au',
+'Modern Canberra retirement village in Belconnen. Pool, gym, bowling green, and close to Westfield shopping.',
+'approved', 'seed_data', true, false, NOW(), NOW());

@@ -1,0 +1,245 @@
+═══════════════════════════════════════════════════════════════
+            RETIREMENT VILLAGE RESIDENCE CONTRACT
+═══════════════════════════════════════════════════════════════
+
+VILLAGE: Peaceful Pines Retirement Village
+ADDRESS: 123 Serenity Drive, Melbourne VIC 3000
+OPERATOR: Peaceful Living Group Pty Ltd (ABN 12 345 678 901)
+
+RESIDENT DETAILS:
+Name: [To be completed]
+Date of Birth: [To be completed]
+Previous Address: [To be completed]
+
+UNIT DETAILS:
+Unit Number: 47
+Unit Type: Two Bedroom Independent Living Unit
+Size: 85 square meters
+Car Space: Single garage included
+
+═══════════════════════════════════════════════════════════════
+                    FINANCIAL TERMS
+═══════════════════════════════════════════════════════════════
+
+1. ENTRY CONTRIBUTION (INGOING CONTRIBUTION)
+   Total Entry Amount: $450,000 (Four Hundred and Fifty Thousand Dollars)
+   
+   Payment Schedule:
+   - Deposit (10%): $45,000 (due upon signing)
+   - Balance: $405,000 (due at settlement, within 90 days)
+
+2. DEFERRED MANAGEMENT FEE (DMF)
+   The Operator will charge a Deferred Management Fee calculated as follows:
+   
+   - Year 1: 6% of Entry Contribution = $27,000
+   - Year 2: 6% of Entry Contribution = $27,000
+   - Year 3: 6% of Entry Contribution = $27,000
+   - Year 4: 6% of Entry Contribution = $27,000
+   - Year 5+: 6% of Entry Contribution = $27,000
+   
+   MAXIMUM DMF CAP: 30% of Entry Contribution ($135,000)
+   Cap is reached after 5 years of residence.
+
+3. RECURRENT CHARGES (MONTHLY FEES)
+   General Service Fee: $780 per month
+   
+   This fee covers:
+   - Building insurance
+   - Common area maintenance
+   - Gardens and grounds maintenance
+   - Security services
+   - Emergency call system
+   - Administration costs
+   
+   Note: The General Service Fee is reviewed annually and may increase
+   in line with CPI or actual cost increases (whichever is greater).
+
+4. CAPITAL GAINS/LOSSES SHARING
+   Upon departure, any capital gain or loss will be shared as follows:
+   
+   - Resident Share: 50% of capital gain/loss
+   - Operator Share: 50% of capital gain/loss
+   
+   Capital Gain/Loss is calculated as the difference between:
+   - The Outgoing Market Value (independently valued), and
+   - Your original Entry Contribution ($450,000)
+
+5. EXIT FEE CALCULATION EXAMPLE
+   
+   Scenario A - After 3 years, property value increases to $500,000:
+   
+   Outgoing Market Value:                    $500,000
+   Less: Entry Contribution:                ($450,000)
+   Capital Gain:                              $50,000
+   
+   Operator's Share of Gain (50%):           ($25,000)
+   Deferred Management Fee (3 years @ 6%):  ($81,000)
+   
+   Total Deductions:                        ($106,000)
+   
+   ESTIMATED REFUND TO RESIDENT:             $394,000
+   
+   Scenario B - After 6 years, property value increases to $520,000:
+   
+   Outgoing Market Value:                    $520,000
+   Less: Entry Contribution:                ($450,000)
+   Capital Gain:                              $70,000
+   
+   Operator's Share of Gain (50%):           ($35,000)
+   Deferred Management Fee (capped at 30%): ($135,000)
+   
+   Total Deductions:                        ($170,000)
+   
+   ESTIMATED REFUND TO RESIDENT:             $350,000
+
+6. RENOVATION/REFURBISHMENT COSTS
+   Upon departure, the Operator may deduct reasonable costs for:
+   - Returning the unit to original condition (fair wear and tear excluded)
+   - Necessary repairs beyond normal wear and tear
+   - Carpet steam cleaning and professional cleaning
+   
+   Maximum deduction: $15,000 (unless damage exceeds normal wear)
+
+═══════════════════════════════════════════════════════════════
+                    TERMS AND CONDITIONS
+═══════════════════════════════════════════════════════════════
+
+7. RESIDENCE RIGHTS
+   7.1 You have the right to occupy the Unit for life, subject to:
+       - Payment of all fees when due
+       - Compliance with Village Rules
+       - Not causing nuisance to other residents
+   
+   7.2 This is a LICENCE TO OCCUPY (not ownership or lease)
+   
+   7.3 You cannot sublease or assign your residence rights
+
+8. COOLING OFF PERIOD
+   You have 21 days from signing this contract to withdraw without penalty.
+   Full refund of deposit will be provided if you withdraw during this period.
+
+9. TERMINATION OF CONTRACT
+   This contract terminates when:
+   9.1 You provide 90 days written notice of intention to leave
+   9.2 You pass away
+   9.3 You permanently move to higher care facility
+   9.4 Serious breach of Village Rules (after warnings)
+
+10. REFUND PAYMENT TIMELINE
+    The Operator will pay your refund within 14 days of the LATER of:
+    - Re-sale of the unit to a new resident
+    - Settlement of the new resident's entry contribution
+    - 12 months from the date you vacate
+    
+    MAXIMUM WAIT TIME: 12 months (unless unit has not been re-sold)
+
+11. MAINTENANCE RESPONSIBILITIES
+    
+    OPERATOR RESPONSIBLE FOR:
+    - External walls, roof, foundations
+    - Common areas
+    - Essential services (water, electricity, gas infrastructure)
+    - Building insurance
+    
+    RESIDENT RESPONSIBLE FOR:
+    - Internal fixtures and fittings
+    - Carpet and floor coverings
+    - Kitchen appliances
+    - Interior painting and decorating
+    - Air conditioning units (if installed by resident)
+    - Contents insurance
+
+12. AGED CARE ARRANGEMENTS
+    12.1 If you require aged care, you may need to move to appropriate facility
+    12.2 The village has a priority transfer arrangement with "Caring Hearts Aged Care"
+    12.3 You may remain in the unit if care can be adequately provided
+    12.4 You continue to pay monthly fees until contract termination
+
+13. VILLAGE RULES
+    Key rules include:
+    - Pets: Small pets permitted with approval (under 10kg)
+    - Visitors: Overnight guests limited to 30 days per year
+    - Age requirement: At least one resident must be 55+ years
+    - Noise: Quiet hours 10pm-7am
+    - Parking: One vehicle per unit in designated space
+    
+    Full Village Rules document provided separately.
+
+14. DISPUTE RESOLUTION
+    Any disputes must first be addressed through:
+    - Discussion with Village Manager
+    - Mediation (if discussion unsuccessful)
+    - Victorian Civil and Administrative Tribunal (VCAT) as last resort
+
+15. COOLING OFF AND LEGAL ADVICE
+    ⚠️ IMPORTANT NOTICES:
+    
+    - You MUST seek independent legal advice before signing
+    - You have 21 days cooling off period (from date of signing)
+    - The Operator recommends engaging a solicitor experienced in 
+      retirement village contracts
+    - Government information available at: consumer.vic.gov.au
+
+═══════════════════════════════════════════════════════════════
+                    IMPORTANT DISCLOSURES
+═══════════════════════════════════════════════════════════════
+
+RED FLAGS TO DISCUSS WITH YOUR LAWYER:
+
+⚠️ DEFERRED MANAGEMENT FEE: You will lose $135,000 (30% of entry price)
+   if you stay 5 years or longer. This is NOT refundable.
+
+⚠️ CAPITAL GAINS SHARING: You only receive 50% of any increase in 
+   property value. The operator takes the other 50%.
+
+⚠️ MONTHLY FEE INCREASES: Fees can increase annually and there is no 
+   cap on increases (typically CPI or cost increases).
+
+⚠️ REFUND TIMING: You may wait up to 12 months for your refund after 
+   leaving, as payment depends on resale of your unit.
+
+⚠️ NO OWNERSHIP: You do not own the unit. This is a licence to occupy.
+   You cannot leave it to your children in your will.
+
+ESTIMATED TOTAL COST COMPARISON (Over 10 years):
+- Entry Contribution: $450,000
+- Monthly Fees (10 years @ $780/month + 3% annual increase): $108,000
+- Deferred Management Fee (capped): $135,000
+- Less: Expected Refund (assuming 15% property growth): -$407,500
+- ESTIMATED NET COST: $285,500
+
+═══════════════════════════════════════════════════════════════
+
+SIGNATURES
+
+RESIDENT(S):
+
+Signature: _________________________ Date: ______________
+Print Name: _________________________
+
+Signature: _________________________ Date: ______________
+Print Name: _________________________ (if couple)
+
+
+OPERATOR (Peaceful Living Group Pty Ltd):
+
+Signature: _________________________ Date: ______________
+Print Name: _________________________
+Position: Village Manager
+
+
+WITNESS:
+
+Signature: _________________________ Date: ______________
+Print Name: _________________________
+
+═══════════════════════════════════════════════════════════════
+
+CONTRACT VERSION: PL-RVC-2024-VIC-v3.2
+PREPARED DATE: January 15, 2024
+REGULATED UNDER: Retirement Villages Act 1986 (Victoria)
+
+This contract complies with Victorian retirement village legislation.
+Resident Information Statement provided separately.
+
+═══════════════════════════════════════════════════════════════

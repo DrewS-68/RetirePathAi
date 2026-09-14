@@ -1,0 +1,73 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                    GOOGLE COLAB - COPY-PASTE GUIDE                        ║
+║                                                                           ║
+║  Instructions:                                                            ║
+║  1. Go to https://colab.research.google.com/                             ║
+║  2. Click "+ New Notebook"                                                ║
+║  3. Copy each CELL below and paste into Google Colab                      ║
+║  4. Press Shift+Enter after pasting each cell                             ║
+║                                                                           ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+
+═══════════════════════════════════════════════════════════════════════════
+CELL 1 - Install Libraries
+═══════════════════════════════════════════════════════════════════════════
+
+!pip install -q requests beautifulsoup4 pillow supabase lxml
+
+
+═══════════════════════════════════════════════════════════════════════════
+CELL 2 - Set Your Credentials (ALREADY FILLED IN!)
+═══════════════════════════════════════════════════════════════════════════
+
+import os
+os.environ['SUPABASE_URL'] = 'https://luwfbkxjbogfapgkznve.supabase.co'
+os.environ['SUPABASE_SERVICE_ROLE_KEY'] = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx1d2Zia3hqYm9nZmFwZ2t6bnZlIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2NDEwNjk2NCwiZXhwIjoyMDc5NjgyOTY0fQ.DvYNotPUz0UTzaYkXjRtK1KPcLFpRjj--WmCuf1drbI'
+
+
+═══════════════════════════════════════════════════════════════════════════
+CELL 3 - Load Scraper Code (LARGE - Scroll to find it all)
+═══════════════════════════════════════════════════════════════════════════
+
+Go to the file: /scrapers/READY_TO_RUN_COLAB.py
+
+Find the section that starts with "CELL 3: Load Scraper Code"
+
+Copy EVERYTHING from "import os" to the banner that says "SCRAPER LOADED AND READY!"
+
+It's about 400 lines. Make sure you get it all!
+
+
+═══════════════════════════════════════════════════════════════════════════
+CELL 4 - Test Run (5 Villages)
+═══════════════════════════════════════════════════════════════════════════
+
+scraper = UniqueGoogleImagesScraper()
+villages = scraper.get_villages_needing_images(limit=5)
+print(f"\n🧪 TESTING on {len(villages)} villages...")
+scraper.run_batch(villages, delay=3.0)
+
+
+═══════════════════════════════════════════════════════════════════════════
+CELL 5 - Production Run (ALL Villages - Run AFTER Test Works!)
+═══════════════════════════════════════════════════════════════════════════
+
+scraper = UniqueGoogleImagesScraper()
+villages = scraper.get_villages_needing_images()
+print(f"\n🚀 PRODUCTION RUN: Processing {len(villages)} villages...")
+print(f"⏱️  Estimated time: {(len(villages) * 3) / 60:.1f} minutes\n")
+scraper.run_batch(villages, delay=3.0)
+
+
+═══════════════════════════════════════════════════════════════════════════
+                              YOU'RE DONE!
+═══════════════════════════════════════════════════════════════════════════
+
+After running Cell 4 (test), verify in your RetirePath app that images appear.
+
+Then run Cell 5 (production) and wait 2-3 hours.
+
+Expected result: 70-77% of villages will have unique images!
+
+═══════════════════════════════════════════════════════════════════════════

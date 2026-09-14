@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetirePath Email Signature - Copy Me!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .instructions {
+            background-color: #2D6A4F;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .instructions h1 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+        .instructions ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        .instructions li {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+        .signature-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            border: 3px dashed #2D6A4F;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .copy-button {
+            background-color: #2D6A4F;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            display: block;
+            width: 100%;
+        }
+        .copy-button:hover {
+            background-color: #1B4332;
+        }
+        .success-message {
+            display: none;
+            background-color: #52b788;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        <h1>📧 Your RetirePath Email Signature</h1>
+        <ol>
+            <li><strong>Click the green "Copy Signature" button below</strong></li>
+            <li><strong>Go back to Outlook</strong> (keep this page open)</li>
+            <li><strong>Click in the signature editing box</strong></li>
+            <li><strong>Press Ctrl+V</strong> (or right-click and paste)</li>
+            <li><strong>Done!</strong> Your signature should appear with logo and all formatting</li>
+        </ol>
+    </div>
+
+    <button class="copy-button" onclick="copySignature()">✨ Copy Signature to Clipboard ✨</button>
+    
+    <div class="success-message" id="successMessage">
+        ✅ Signature copied! Now paste it into Outlook's signature box.
+    </div>
+
+    <div class="signature-container" id="signatureBox">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif; font-size: 14px; color: #333333; line-height: 1.5;">
+            <tr>
+                <td style="padding-right: 15px; vertical-align: top;">
+                    <img src="https://i.imgur.com/8vFk8de.png" alt="RetirePath Logo" width="60" height="60" style="display: block; border: 0;">
+                </td>
+                <td style="vertical-align: top; border-left: 3px solid #2D6A4F; padding-left: 15px;">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td style="padding-bottom: 5px;">
+                                <strong style="font-size: 16px; color: #1B4332;">Drew Smith</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom: 8px; color: #666666; font-size: 13px;">
+                                RetirePath
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom: 3px;">
+                                📧 <a href="mailto:drew@retirepath.com.au" style="color: #2D6A4F; text-decoration: none;">drew@retirepath.com.au</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom: 3px;">
+                                📱 0422 208 230
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom: 8px;">
+                                🌐 <a href="https://www.retirepath.com.au" style="color: #2D6A4F; text-decoration: none;">www.retirepath.com.au</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-top: 8px; font-size: 12px; color: #666666; font-style: italic; border-top: 1px solid #E5E7EB; padding-top: 8px;">
+                                Your retirement village transition guide
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-top: 8px; font-size: 11px; color: #666666; line-height: 1.4;">
+                                <em>RetirePath acknowledges the Traditional Custodians of Country throughout Australia and recognises their continuing connection to land, waters and culture. We pay our respects to Elders past and present.</em>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function copySignature() {
+            const signatureBox = document.getElementById('signatureBox');
+            const successMessage = document.getElementById('successMessage');
+            
+            // Create a range and select the signature
+            const range = document.createRange();
+            range.selectNode(signatureBox.querySelector('table'));
+            
+            // Clear any existing selections
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            
+            try {
+                // Copy to clipboard
+                document.execCommand('copy');
+                
+                // Show success message
+                successMessage.style.display = 'block';
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.style.display = 'none';
+                }, 5000);
+                
+                // Clear selection
+                selection.removeAllRanges();
+            } catch (err) {
+                alert('Please manually select the signature below and press Ctrl+C to copy');
+            }
+        }
+    </script>
+</body>
+</html>
