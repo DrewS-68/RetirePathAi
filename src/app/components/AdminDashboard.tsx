@@ -12,29 +12,24 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from './ui/tabs';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './ui/table';
 import {
   Building,
-  Building2,
+  Shield,
   CheckCircle,
   Clock,
   XCircle,
   Eye,
   MapPin,
-  Shield,
   RefreshCw,
   Trash2,
   Phone,
   Mail,
   AlertCircle,
-  BarChart3,
   Database,
-  Download,
-  Upload,
   MessageSquare,
   Star,
   Users,
   Send,
   FileText,
   Copy,
-  Sparkles,
 } from 'lucide-react';
 
 import { DataQualityDashboard } from './admin/DataQualityDashboard';
@@ -43,129 +38,8 @@ import { FeaturedVillagesManager } from './admin/FeaturedVillagesManager';
 import { AgentLeadsManager } from './admin/AgentLeadsManager';
 import { EmailTemplates } from './admin/EmailTemplates';
 import { MarketingMaterials } from './admin/MarketingMaterials';
-import { VICWebsiteChecker } from './admin/VICWebsiteChecker';
-import { VICDataImporter } from './admin/VICDataImporter';
-import { VictorianVillagesInspector } from './admin/VictorianVillagesInspector';
-import { VictorianVillagesSourceAnalyzer } from './admin/VictorianVillagesSourceAnalyzer';
-import { VictorianDuplicateFinder } from './admin/VictorianDuplicateFinder';
-import { VictorianSourceComparison } from './admin/VictorianSourceComparison';
-import { DeleteAgedCareFacilities } from './admin/DeleteAgedCareFacilities';
-import { DeleteOldVictorianVillages } from './admin/DeleteOldVictorianVillages';
-import { VICOperatorsExporter } from './admin/VICOperatorsExporter';
-import { VICOperatorBulkUpdate } from './admin/VICOperatorBulkUpdate';
-import { VICOperatorDiagnostic } from './admin/VICOperatorDiagnostic';
-import { VICOperatorAutoScraper } from './admin/VICOperatorAutoScraper';
-import { VICOperatorWhitelistImporter } from './admin/VICOperatorWhitelistImporter';
-import { VICOperatorWhitelistManager } from './admin/VICOperatorWhitelistManager';
-import { VICVillageDeleter } from './admin/VICVillageDeleter';
-import { VICDatabaseInspector } from './admin/VICDatabaseInspector';
-import { VICDeleteOldWithWebsites } from './admin/VICDeleteOldWithWebsites';
-import { VICOperatorTimestampCheckerSimple } from './admin/VICOperatorTimestampCheckerSimple';
-import { VICVillageDiagnostic } from './admin/VICVillageDiagnostic';
-import { VICVillageServerDeleter } from './admin/VICVillageServerDeleter';
-import { VICCSVDuplicateChecker } from './admin/VICCSVDuplicateChecker';
-import { VICVillageRealTimeCounter } from './admin/VICVillageRealTimeCounter';
-import { VICOperatorFieldInspector } from './admin/VICOperatorFieldInspector';
-import { VICManualOperatorSetter } from './admin/VICManualOperatorSetter';
-import { VICExtractOperatorsFromDescription } from './admin/VICExtractOperatorsFromDescription';
-import { VICOperatorAudit } from './admin/VICOperatorAudit';
-import { VICOperatorDatabaseCheck } from './admin/VICOperatorDatabaseCheck';
-import { VICVillageBrowser } from './admin/VICVillageBrowser';
-import { VICVillageCSVImporter } from './admin/VICVillageCSVImporter';
-import { VICDatabaseStats } from './admin/VICDatabaseStats';
-import VICGovReconciliation from './admin/VICGovReconciliation';
-import OperatorScraper from './admin/OperatorScraper';
-import { OperatorScraperDiagnostic } from './admin/OperatorScraperDiagnostic';
-import { SmartOperatorScraper } from './admin/SmartOperatorScraper';
-import { BulkOperatorCleaner } from './admin/BulkOperatorCleaner';
-import { OperatorListViewer } from './admin/OperatorListViewer';
-import { VICAberleaFilter } from './admin/VICAberleaFilter';
-import { VICRecentOperatorCheck } from './admin/VICRecentOperatorCheck';
-import { VICOperatorCSVMerger } from './admin/VICOperatorCSVMerger';
-import { VICOperatorCSVExport } from './admin/VICOperatorCSVExport';
-import { VICScrapedOperatorMerge } from './admin/VICScrapedOperatorMerge';
-import { LocalStorageInspector } from './admin/LocalStorageInspector';
-import { DatabaseOperatorInspector } from './admin/DatabaseOperatorInspector';
-import { VICOperatorCountCheck } from './admin/VICOperatorCountCheck';
-import { VICLocalStorageCheck } from './admin/VICLocalStorageCheck';
-import { VICScrapedCSVImporter } from './admin/VICScrapedCSVImporter';
-import { VICMergeDebugger } from './admin/VICMergeDebugger';
-import { VICNameMatchingDiagnostic } from './admin/VICNameMatchingDiagnostic';
-import { VICCSVOperatorMerge } from './admin/VICCSVOperatorMerge';
-import { VICCSVDatabaseComparison } from './admin/VICCSVDatabaseComparison';
-import { VICOperatorReconciliation } from './admin/VICOperatorReconciliation';
-import { VICOperatorFullExport } from './admin/VICOperatorFullExport';
-import { VICOperatorCSVBulkImport } from './admin/VICOperatorCSVBulkImport';
-import { VICMissingOperatorExport } from './admin/VICMissingOperatorExport';
-import { VICURLImporter } from './admin/VICURLImporter';
-import { VICVillagesNeedingURLsExport } from './admin/VICVillagesNeedingURLsExport';
-import { DeleteAllVICWebsites } from './admin/DeleteAllVICWebsites';
-import { VICWebsiteScraper } from './admin/VICWebsiteScraper';
-import { VICWebsiteScraperSimple } from './admin/VICWebsiteScraperSimple';
-import { VICWebsiteRecoveryTool } from './admin/VICWebsiteRecoveryTool';
-import { VICMissingWebsitesFinder } from './admin/VICMissingWebsitesFinder';
-import { WebsiteScraperDiagnostics } from './admin/WebsiteScraperDiagnostics';
-import { VICURLPatternGenerator } from './admin/VICURLPatternGenerator';
-import { StartFreshInstructions } from './admin/StartFreshInstructions';
-import { VICAddressUploader } from './admin/VICAddressUploader';
-import { DeleteAllVictorianVillages } from './DeleteAllVictorianVillages';
-import { VICOperatorScraper } from './VICOperatorScraper';
-import { DatabaseInvestigator } from './admin/DatabaseInvestigator';
-import { DataEnrichmentDashboard } from './admin/DataEnrichmentDashboard';
-import { WebsiteBulkEditor } from './admin/WebsiteBulkEditor';
-import { BackendStatusChecker } from './admin/BackendStatusChecker';
-import { VICWebsiteAnalyzer } from './admin/VICWebsiteAnalyzer';
-import { VICBlacklistCleaner } from './admin/VICBlacklistCleaner';
-import { VICBlacklistCleanup } from './admin/VICBlacklistCleanup';
-import { VICOperatorURLGenerator } from './admin/VICOperatorURLGenerator';
-import { VICMultiMethodScraper } from './admin/VICMultiMethodScraper';
-import { VICOperatorDomainScraper } from './admin/VICOperatorDomainScraper';
-import { VICScraperCleanup } from './admin/VICScraperCleanup';
-import { VICRecentScrapeResults } from './admin/VICRecentScrapeResults';
-import { OperatorMismatchDiagnostic } from './admin/OperatorMismatchDiagnostic';
-import { VICURLCleanup } from './admin/VICURLCleanup';
-import { VICOperatorDomainsUploader } from './admin/VICOperatorDomainsUploader';
-import { VICMultiStrategyScraper } from './admin/VICMultiStrategyScraper';
-import { AustralianUnityCleanup } from './admin/AustralianUnityCleanup';
-import DatabaseStatsChecker from './admin/DatabaseStatsChecker';
-import ScrapedDataReview from './admin/ScrapedDataReviewSimplified';
-import BulkClassifier from './admin/BulkClassifier';
-import { ManualVillageClassifier } from './admin/ManualVillageClassifier';
-import LocalStorageRecovery from './admin/LocalStorageRecovery';
-import DatabasePricingAudit from './admin/DatabasePricingAudit';
-import ResilientPricingScraper from './admin/ResilientPricingScraper';
-import ErrorBoundary from './ErrorBoundary';
-import { SimpleVillageScraper } from './admin/SimpleVillageScraper';
-import { FailedVillagesInspector } from './admin/FailedVillagesInspector';
-import WebScraperTool from './admin/WebScraperTool';
-import { DataQualityAnalyzer } from './admin/DataQualityAnalyzer';
-import { BulkURLFixerCSV } from './admin/BulkURLFixerCSV';
-import { BatchScrapingDashboard } from './admin/BatchScrapingDashboard';
-import { VicUrlChecker } from './VicUrlChecker';
-import { VicWebsiteDiagnostic } from './admin/VicWebsiteDiagnostic';
-import { ManualWebsiteImporter } from './admin/ManualWebsiteImporter';
-import { E2EWebsiteTest } from './admin/E2EWebsiteTest';
-import { VicOperatorCheck } from './admin/VicOperatorCheck';
-import { DeleteBadWebsite } from './admin/DeleteBadWebsite';
-import { GoogleSearchDebugger } from './admin/GoogleSearchDebugger';
-import { GoogleURLBulkGenerator } from './admin/GoogleURLBulkGenerator';
-import { ScraperAPIURLFinder } from './admin/ScraperAPIURLFinder';
-import ScraperAPIDebugger from './admin/ScraperAPIDebugger';
-import AdmillanDiagnostic from './admin/AdmillanDiagnostic';
-import { OperatorPatternManager } from './admin/OperatorPatternManager';
-import { OperatorURLInspector } from './admin/OperatorURLInspector';
-import { VICWebsiteMigrator } from './admin/VICWebsiteMigrator';
-import { ScrapedDataInspector } from './admin/ScrapedDataInspector';
-import { VICWebsiteImportAnalyzer } from './admin/VICWebsiteImportAnalyzer';
-import { DatabasePersistenceTest } from './admin/DatabasePersistenceTest';
-import { BackendPersistenceTest } from './admin/BackendPersistenceTest';
 import { DataRecoveryDashboard } from './DataRecoveryDashboard';
-import { DeleteAllVICVillages } from './admin/DeleteAllVICVillages';
-import { SimpleVICDeleter } from './admin/SimpleVICDeleter';
-import { SimpleVICCSVUploader } from './admin/SimpleVICCSVUploader';
-import { DeleteOldVICVillages } from './admin/DeleteOldVICVillages';
-import { VICDuplicateChecker } from './admin/VICDuplicateChecker';
-import { ComprehensiveVillageScraper } from './admin/ComprehensiveVillageScraper';
+import ErrorBoundary from './ErrorBoundary';
 
 interface Village {
   id: string;
@@ -227,7 +101,7 @@ export function AdminDashboard() {
   const [showRejectModal, setShowRejectModal] = useState(false);
   const [rejectionReason, setRejectionReason] = useState('');
   const [actionLoading, setActionLoading] = useState(false);
-  const [activeTab, setActiveTab] = useState('operator-scraper'); // Changed default to operator-scraper to avoid loading heavy tabs
+  const [activeTab, setActiveTab] = useState('overview');
   const [signatureCopied, setSignatureCopied] = useState(false);
 
   // Admin-only access control
@@ -315,30 +189,6 @@ export function AdminDashboard() {
       });
     }
   }, []); // Empty dependencies - only run once on mount
-
-  // Listen for navigation events from other components
-  useEffect(() => {
-    const handleNavigateToEnrichment = (event: any) => {
-      const { tab, sectionId } = event.detail;
-      
-      // Switch to the requested tab
-      setActiveTab(tab);
-      
-      // Wait for tab to render, then scroll to section
-      setTimeout(() => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }, 100);
-    };
-    
-    window.addEventListener('navigateToEnrichment', handleNavigateToEnrichment);
-    
-    return () => {
-      window.removeEventListener('navigateToEnrichment', handleNavigateToEnrichment);
-    };
-  }, []);
 
   // Approve village
   const handleApprove = async (villageId: string) => {
@@ -514,7 +364,7 @@ export function AdminDashboard() {
       // Copy to clipboard
       document.execCommand('copy');
       setSignatureCopied(true);
-      
+
       // Reset after 3 seconds
       setTimeout(() => {
         setSignatureCopied(false);
@@ -531,9 +381,6 @@ export function AdminDashboard() {
 
   // View village details
   const handleViewDetails = (village: Village) => {
-    console.log(' Opening village for review:', village.name);
-    console.log('🔍 Village data:', village);
-    console.log('🔍 Village scraped_data:', (village as any).scraped_data);
     setSelectedVillage(village);
     setShowDetailModal(true);
   };
@@ -585,14 +432,6 @@ export function AdminDashboard() {
               </>
             )}
           </Button>
-          <Button
-            size="lg"
-            onClick={() => window.location.hash = '#generate-csv'}
-            className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700"
-          >
-            <Download className="size-5 mr-2" />
-            Generate CSV for Image Scraping
-          </Button>
         </div>
       </div>
 
@@ -605,34 +444,6 @@ export function AdminDashboard() {
 
       <Tabs value={activeTab} onValueChange={setActiveTab}>
         <TabsList className="flex flex-wrap gap-1 h-auto p-1 bg-muted rounded-lg">
-          <TabsTrigger value="recovery" className="flex-shrink-0">
-            <Shield className="size-4 mr-2" />
-            🛡️ Data Recovery
-          </TabsTrigger>
-          <TabsTrigger value="operator-scraper" className="flex-shrink-0">
-            <Building2 className="size-4 mr-2" />
-            🔥 Operator Scraper
-          </TabsTrigger>
-          <TabsTrigger value="url-uploader" className="flex-shrink-0">
-            <Upload className="size-4 mr-2" />
-            📊 URL Manager
-          </TabsTrigger>
-          <TabsTrigger value="vic-reconcile" className="flex-shrink-0">
-            <Database className="size-4 mr-2" />
-            VIC Reconcile
-          </TabsTrigger>
-          <TabsTrigger value="analytics" className="flex-shrink-0">
-            <BarChart3 className="size-4 mr-2" />
-            Analytics
-          </TabsTrigger>
-          <TabsTrigger value="data-quality" className="flex-shrink-0">
-            <Database className="size-4 mr-2" />
-            Data Quality
-          </TabsTrigger>
-          <TabsTrigger value="batch-scraping" className="flex-shrink-0">
-            <RefreshCw className="size-4 mr-2" />
-            Scraper
-          </TabsTrigger>
           <TabsTrigger value="overview" className="flex-shrink-0">
             <Building className="size-4 mr-2" />
             Overview
@@ -648,6 +459,10 @@ export function AdminDashboard() {
           <TabsTrigger value="rejected" className="flex-shrink-0">
             <XCircle className="size-4 mr-2" />
             Rejected ({stats.rejected})
+          </TabsTrigger>
+          <TabsTrigger value="data-quality" className="flex-shrink-0">
+            <Database className="size-4 mr-2" />
+            Data Quality
           </TabsTrigger>
           <TabsTrigger value="reviews" className="flex-shrink-0">
             <MessageSquare className="size-4 mr-2" />
@@ -669,20 +484,11 @@ export function AdminDashboard() {
             <FileText className="size-4 mr-2" />
             Marketing
           </TabsTrigger>
-          <TabsTrigger value="letterhead" className="flex-shrink-0">
-            <FileText className="size-4 mr-2" />
-            Letterhead
-          </TabsTrigger>
-          <TabsTrigger value="vic-import" className="flex-shrink-0">
-            <Download className="size-4 mr-2" />
-            VIC Import
+          <TabsTrigger value="recovery" className="flex-shrink-0">
+            <Shield className="size-4 mr-2" />
+            Data Recovery
           </TabsTrigger>
         </TabsList>
-
-        {/* Analytics Tab */}
-        <TabsContent value="analytics" className="space-y-6">
-          <DataQualityAnalyzer />
-        </TabsContent>
 
         {/* Data Quality Tab */}
         <TabsContent value="data-quality" className="space-y-6">
@@ -691,14 +497,6 @@ export function AdminDashboard() {
 
         {/* Overview Tab */}
         <TabsContent value="overview" className="space-y-6">
-          {/* Alert about pagination */}
-          <Alert>
-            <AlertCircle className="size-4" />
-            <AlertDescription>
-              <strong>Note:</strong> This dashboard loads the 100 most recently created villages for performance. For full village management, use the specialized tabs.
-            </AlertDescription>
-          </Alert>
-
           {/* Stats Cards */}
           <div className="grid md:grid-cols-4 gap-4">
             <Card className="p-6">
@@ -903,417 +701,11 @@ export function AdminDashboard() {
           <MarketingMaterials />
         </TabsContent>
 
-        {/* Letterhead Tab */}
-        <TabsContent value="letterhead" className="space-y-6">
-          <Card className="p-6">
-            <h3 className="mb-4">Letterhead Preview</h3>
-            <p className="text-muted-foreground">Letterhead preview coming soon...</p>
-          </Card>
-        </TabsContent>
-
-        {/* VIC Import Tab */}
-        <TabsContent value="vic-import" className="space-y-6">
-          {/* 🚀 Quick Start Guide */}
-          <Card className="p-6 bg-gradient-to-r from-purple-50 via-pink-50 to-orange-50 border-2 border-purple-400">
-            <h2 className="text-2xl font-bold mb-2 text-purple-900 flex items-center gap-2">
-              <Download className="size-6" />
-              🎯 Quick Start: Update VIC Villages
-            </h2>
-            <div className="space-y-4">
-              <Alert className="bg-blue-50 border-blue-400">
-                <AlertCircle className="size-4" />
-                <AlertDescription>
-                  <strong>✨ NEW: VIC Combined Importer</strong> - Update everything in ONE upload!
-                  <div className="mt-2 space-y-1 text-sm">
-                    <div>• ✅ Corrected village names</div>
-                    <div>• ✅ Operators</div>
-                    <div>• ✅ Website URLs</div>
-                    <div>• ✅ Suburbs & Postcodes</div>
-                    <div>• ✅ Smart fuzzy matching (finds villages even with name variations)</div>
-                  </div>
-                </AlertDescription>
-              </Alert>
-              
-              <div className="bg-white p-4 rounded-lg border-2 border-purple-200">
-                <h3 className="font-semibold mb-2 text-purple-900">📋 Your CSVs:</h3>
-                <div className="space-y-2 text-sm">
-                  <div className="flex items-start gap-2">
-                    <Badge className="bg-green-600 mt-0.5">CSV #1</Badge>
-                    <div>
-                      <strong>28 villages</strong> with corrected names + operators + full data
-                      <br />
-                      <span className="text-xs text-gray-600">Columns: Name, Operator, Suburb, Postcode, State, Website URL</span>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <Badge className="bg-blue-600 mt-0.5">CSV #2</Badge>
-                    <div>
-                      <strong>44 villages</strong> with corrected names + URLs + suburbs + postcodes
-                      <br />
-                      <span className="text-xs text-gray-600">Columns: Name, Suburb, Postcode, Website URL</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-lg border-2 border-green-300">
-                <h3 className="font-semibold mb-2 text-green-900">🚀 Quick Steps:</h3>
-                <ol className="space-y-1 text-sm list-decimal list-inside">
-                  <li>Scroll down to <strong>"🚀 VIC Combined Data Importer"</strong> (purple/pink card)</li>
-                  <li>Upload CSV #1 (28 villages) → Import → Check results</li>
-                  <li>Upload CSV #2 (44 villages) → Import → Check results</li>
-                  <li>Download the results CSV to review what was updated</li>
-                  <li>Done! 🎉</li>
-                </ol>
-              </div>
-            </div>
-          </Card>
-
-          <VICWebsiteChecker />
-          <VICDataImporter />
-          <VictorianVillagesInspector />
-          <VictorianVillagesSourceAnalyzer />
-          <VictorianDuplicateFinder />
-          <VictorianSourceComparison />
-          <DeleteAgedCareFacilities />
-          <DeleteOldVictorianVillages />
-          <VICOperatorsExporter />
-          <VICOperatorBulkUpdate />
-          <VICOperatorDiagnostic />
-          <VICOperatorAutoScraper />
-          <VICOperatorWhitelistImporter />
-          <VICOperatorWhitelistManager />
-          <VICVillageDeleter />
-          <VICDatabaseInspector />
-          <VICDeleteOldWithWebsites />
-          <VICOperatorTimestampCheckerSimple />
-          <VICVillageDiagnostic />
-          <VICVillageServerDeleter />
-          <VICCSVDuplicateChecker />
-          <VICVillageRealTimeCounter />
-          <VICOperatorFieldInspector />
-          <VICManualOperatorSetter />
-          <VICExtractOperatorsFromDescription />
-          <VICOperatorAudit />
-          <VICOperatorDatabaseCheck />
-          <VICVillageBrowser />
-          <VICVillageCSVImporter />
-          <VICOperatorScraper />
-          <DeleteAllVictorianVillages />
-          <DatabaseInvestigator />
-          <DataEnrichmentDashboard />
-          <WebsiteBulkEditor />
-          <BackendStatusChecker />
-        </TabsContent>
-
-        {/* VIC Reconcile Tab */}
-        <TabsContent value="vic-reconcile" className="space-y-6">
-          <VICDatabaseStats />
-          <VICGovReconciliation />
-        </TabsContent>
-
-        {/* 🛡️ Data Recovery Dashboard - FIRST PRIORITY! */}
+        {/* Data Recovery Tab */}
         <TabsContent value="recovery" className="space-y-6">
           <ErrorBoundary>
             <DataRecoveryDashboard accessToken={accessToken} />
           </ErrorBoundary>
-        </TabsContent>
-
-        {/* Operator Scraper Tab */}
-        <TabsContent value="operator-scraper" className="space-y-6">
-          {/* 🕷️ SCRAPERAPI URL FINDER - USES YOUR EXISTING CREDITS! */}
-          <ErrorBoundary>
-            <ScraperAPIURLFinder />
-          </ErrorBoundary>
-
-          {/* 🔗 GOOGLE URL BULK GENERATOR (Requires Google billing) */}
-          <ErrorBoundary>
-            <GoogleURLBulkGenerator />
-          </ErrorBoundary>
-          
-          {/* 🎯 INSTRUCTIONS: Simple 3-step process */}
-          <StartFreshInstructions />
-          
-          {/* 🎯 THE ONLY EXPORT TOOL YOU NEED! */}
-          <VICOperatorFullExport />
-          
-          {/* 🆕 Import URLs for 41 VIC villages */}
-          <VICURLImporter accessToken={accessToken} />
-          
-          {/* 🆕 DELETE ALL BAD WEBSITE URLs */}
-          <DeleteAllVICWebsites />
-          
-          {/* 🔍 DIAGNOSTICS - Analyze why scraping has low success rate */}
-          <WebsiteScraperDiagnostics />
-          
-          {/* ⚡ URL PATTERN GENERATOR - Add operator URL patterns */}
-          <VICURLPatternGenerator />
-          
-          {/* 🔍 WEBSITE RECOVERY TOOL - Find and recover the lost 318 websites */}
-          <VICWebsiteRecoveryTool />
-          
-          {/* 🗑️ STEP 1: CLEAN BLACKLISTED URLs FIRST! */}
-          <VICBlacklistCleaner />
-          
-          {/* 🗑️ STEP 1B: DELETE BLACKLISTED WEBSITES FROM DATABASE */}
-          <VICBlacklistCleanup />
-          
-          {/* 🏥 AUSTRALIAN UNITY CLEANUP - Fix incorrect operator assignments */}
-          <AustralianUnityCleanup />
-          
-          {/* ❌ DEPRECATED: OLD SINGLE-STRATEGY SCRAPER - HIDDEN */}
-          {/* <VICOperatorDomainScraper /> */}
-          
-          {/* 🕒 VIEW RECENT SCRAPE RESULTS */}
-          <VICRecentScrapeResults />
-          
-          {/* 🔍 OPERATOR MISMATCH DIAGNOSTIC */}
-          <OperatorMismatchDiagnostic />
-          
-          {/* 🧹 VIC URL CLEANUP & BULK FIX */}
-          <VICURLCleanup />
-          
-          {/* 📁 UPLOAD OPERATOR DOMAINS CSV - REQUIRED FOR SCRAPER! */}
-          <VICOperatorDomainsUploader />
-          
-          {/* ⭐⭐⭐ USE THIS ONE! MULTI-STRATEGY SCRAPER (60-80% SUCCESS!) ⭐⭐⭐ */}
-          <VICMultiStrategyScraper />
-          
-          {/* 🔗 STEP 1D: GENERATE URLs FOR MAJOR OPERATORS (Stockland, Aveo, etc.) */}
-          <VICOperatorURLGenerator />
-          
-          {/* 🚀 STEP 2: MULTI-METHOD SCRAPER - 80%+ Success Rate Target! */}
-          <VICMultiMethodScraper />
-          
-          {/* 🧹 STEP 2B: CLEANUP BAD SCRAPING RESULTS */}
-          <VICScraperCleanup />
-          
-          {/* 🔍 ANALYZE WHAT WORKED - Study existing websites */}
-          <VICWebsiteAnalyzer />
-          
-          {/* 🔍 FIND MISSING WEBSITES - Diagnose what was lost */}
-          <VICMissingWebsitesFinder />
-          
-          {/* ✅ PROVEN WEBSITE SCRAPER WITH DATA RESILIENCE - ALWAYS USE THIS ONE! */}
-          <ErrorBoundary>
-            <VICWebsiteScraperSimple />
-          </ErrorBoundary>
-          
-          {/* ⚠️ OLD SCRAPER REMOVED - It didn't have data resilience and caused data loss! */}
-          {/* If you need the old scraper, uncomment below (NOT RECOMMENDED): */}
-          {/* <VICWebsiteScraper /> */}
-          
-          {/* 🆕 Export villages still needing URLs */}
-          <VICVillagesNeedingURLsExport accessToken={accessToken} />
-          
-          {/* You can ignore this green card - it's for a different workflow */}
-          <VICOperatorCSVBulkImport />
-          
-          {/* Temporarily disabled - causing page hangs */}
-          {/* <SmartOperatorScraper /> */}
-          <VICRecentOperatorCheck />
-          <VICOperatorCountCheck />
-          <VICLocalStorageCheck />
-          <VICScrapedCSVImporter />
-          <VICMergeDebugger />
-          <VICNameMatchingDiagnostic />
-          <VICCSVOperatorMerge />
-          <VICOperatorReconciliation />
-          <VICCSVDatabaseComparison />
-          <VICOperatorCSVExport />
-          <VICScrapedOperatorMerge />
-          <VICAberleaFilter />
-          <VICOperatorCSVMerger />
-          <OperatorListViewer />
-          <BulkOperatorCleaner />
-          <VICDatabaseStats />
-          <DatabaseOperatorInspector />
-          <VICAddressUploader />
-          <LocalStorageInspector />
-          <OperatorScraperDiagnostic />
-          <OperatorScraper />
-        </TabsContent>
-
-        {/* URL Uploader Tab */}
-        <TabsContent value="url-uploader" className="space-y-6">
-          <SimpleVICDeleter />
-          <ComprehensiveVillageScraper />
-          <VICDuplicateChecker />
-          <SimpleVICCSVUploader />
-          <DeleteOldVICVillages />
-        </TabsContent>
-
-        {/* Batch Scraping Tab */}
-        <TabsContent value="batch-scraping" className="space-y-6">
-          {/* 🧪 DATABASE PERSISTENCE TEST - Test if updates actually work */}
-          <ErrorBoundary>
-            <DatabasePersistenceTest />
-          </ErrorBoundary>
-          
-          {/* 🧪 BACKEND PERSISTENCE TEST - Test if backend save endpoint works */}
-          <ErrorBoundary>
-            <BackendPersistenceTest accessToken={accessToken} />
-          </ErrorBoundary>
-          
-          {/* 🔍 IMPORT ANALYZER - Check what happened with the CSV import */}
-          <ErrorBoundary>
-            <VICWebsiteImportAnalyzer />
-          </ErrorBoundary>
-          
-          {/* 🔍 VIC URL ANALYSIS - Shows what types of URLs we have for VIC villages */}
-          <div className="p-6 bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-300 rounded-lg">
-            <h2 className="text-2xl font-bold mb-2 text-blue-900">🔍 VIC URL Analysis</h2>
-            <p className="text-sm text-blue-700 mb-4">Check what types of URLs we have stored for Victorian villages (official sites vs listing sites)</p>
-            
-            <ErrorBoundary>
-              <VicUrlChecker />
-            </ErrorBoundary>
-          </div>
-
-          {/* 🔍 DIAGNOSTIC: VIC Website Status Checker */}
-          <ErrorBoundary>
-            <VicWebsiteDiagnostic />
-          </ErrorBoundary>
-
-          {/* 🗑️ DELETE BAD WEBSITE */}
-          <ErrorBoundary>
-            <DeleteBadWebsite />
-          </ErrorBoundary>
-
-          {/* 🔍 GOOGLE SEARCH DEBUGGER */}
-          <ErrorBoundary>
-            <GoogleSearchDebugger />
-          </ErrorBoundary>
-
-          {/* 🔗 GOOGLE URL BULK GENERATOR - Generate 200+ search URLs */}
-          <ErrorBoundary>
-            <GoogleURLBulkGenerator />
-          </ErrorBoundary>
-
-          {/* 🐛 SCRAPERAPI DEBUGGER */}
-          <ErrorBoundary>
-            <ScraperAPIDebugger />
-          </ErrorBoundary>
-
-          {/* 🔍 ADMILLAN DIAGNOSTIC */}
-          <ErrorBoundary>
-            <AdmillanDiagnostic />
-          </ErrorBoundary>
-
-          {/* ⚠️ OPERATOR READINESS CHECK */}
-          <ErrorBoundary>
-            <VicOperatorCheck />
-          </ErrorBoundary>
-
-          {/* 🧪 MANUAL TEST: Website Importer */}
-          <ErrorBoundary>
-            <ManualWebsiteImporter />
-          </ErrorBoundary>
-
-          {/* 🧪 END-TO-END TEST: Complete Website Flow */}
-          <ErrorBoundary>
-            <E2EWebsiteTest />
-          </ErrorBoundary>
-
-          {/* ✅ RE-ENABLED: Batch Scraping Dashboard - The most powerful scraping tool */}
-          <ErrorBoundary>
-            <BatchScrapingDashboard />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <DatabaseStatsChecker />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <WebScraperTool accessToken={accessToken} />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <ScrapedDataReview accessToken={accessToken} />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <BulkClassifier accessToken={accessToken} />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <ManualVillageClassifier />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <LocalStorageRecovery />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <DatabasePricingAudit accessToken={accessToken} />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <ResilientPricingScraper accessToken={accessToken} />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <SimpleVillageScraper />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <FailedVillagesInspector />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <BulkURLFixerCSV />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <OperatorPatternManager />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <OperatorURLInspector />
-          </ErrorBoundary>
-          
-          {/* 🔍 SCRAPED DATA INSPECTOR - See what's actually in scraped_data */}
-          <ErrorBoundary>
-            <ScrapedDataInspector />
-          </ErrorBoundary>
-          
-          {/* 🔄 WEBSITE MIGRATOR - Copy scraped websites to main website field */}
-          <ErrorBoundary>
-            <VICWebsiteMigrator />
-          </ErrorBoundary>
-          
-          {/* Database Health Check Button */}
-          <div className="bg-white rounded-lg shadow-md p-6 mt-6">
-            <h3 className="text-xl font-bold mb-4">🏥 Database Health Check</h3>
-            <p className="text-gray-600 mb-4">
-              Check VIC villages database status (total count, operators, websites, etc.)
-            </p>
-            <button
-              onClick={async () => {
-                try {
-                  console.log('🏥 Running database health check...');
-                  const response = await fetch(
-                    `https://${projectId}.supabase.co/functions/v1/make-server-3bba8be8/database-health-check/vic-villages`,
-                    {
-                      headers: {
-                        'Authorization': `Bearer ${publicAnonKey}`,
-                      },
-                    }
-                  );
-
-                  if (response.ok) {
-                    const data = await response.json();
-                    console.log('🏥 DATABASE HEALTH CHECK RESULTS:', data);
-                    
-                    alert(`🏥 Database Health Check Complete!\n\n` +
-                      `Total VIC Villages: ${data.summary.totalVicVillages}\n` +
-                      `With Operator: ${data.summary.withOperator}\n` +
-                      `With Website field: ${data.summary.withWebsite}\n` +
-                      `With scraped_data.website: ${data.summary.withScrapedWebsite}\n` +
-                      `With BOTH operator+website: ${data.summary.withBoth}\n` +
-                      `Unique Operators: ${data.summary.uniqueOperators}\n` +
-                      `NEED MIGRATION: ${data.summary.needsMigration}\n\n` +
-                      `Check console for detailed breakdown`);
-                  } else {
-                    alert('Health check failed');
-                  }
-                } catch (error) {
-                  console.error('Health check error:', error);
-                  alert('Health check failed. Check console.');
-                }
-              }}
-              className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
-            >
-              🏥 Run Health Check
-            </button>
-          </div>
         </TabsContent>
       </Tabs>
 

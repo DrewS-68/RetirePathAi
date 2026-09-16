@@ -23,19 +23,8 @@ import {
   Mail,
   Globe,
   ChevronRight,
-  Activity,
-  Bug
+  Activity
 } from 'lucide-react';
-// import { DebugPostcodeChecker } from './DebugPostcodeChecker'; // Temporarily disabled
-// import { QuickAddVillages } from './QuickAddVillages'; // Temporarily disabled
-// import { SimpleVillageQuery } from './SimpleVillageQuery'; // Temporarily disabled
-import { RawDatabaseQuery } from './RawDatabaseQuery';
-import { FixMissingFacilityType } from './FixMissingFacilityType';
-import { FixVictorianPostcodes } from './FixVictorianPostcodes';
-import { DeduplicateVillages } from './DeduplicateVillages';
-import { FindVictorianDuplicates } from './FindVictorianDuplicates';
-import { FindVictorianDuplicatesHybrid } from './FindVictorianDuplicatesHybrid';
-import { DeleteAllVictorianVillages } from './DeleteAllVictorianVillages';
 
 interface Village {
   id: string;
@@ -79,7 +68,6 @@ export function VillageDirectory() {
   const [selectedVillage, setSelectedVillage] = useState<Village | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [showFilters, setShowFilters] = useState(false);
-  const [showDebug, setShowDebug] = useState(false); // Added debug state
   const [proximitySearchActive, setProximitySearchActive] = useState(false);
   const [searchPostcode, setSearchPostcode] = useState<string | null>(null);
   
@@ -363,35 +351,12 @@ export function VillageDirectory() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="mb-8 flex items-center justify-between">
-        <div>
-          <h1 className="mb-2">Retirement Village Directory</h1>
-          <p className="text-xl text-muted-foreground">
-            Browse {filteredVillages.length} approved retirement villages across Australia
-          </p>
-        </div>
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => setShowDebug(!showDebug)}
-          className="flex-shrink-0"
-        >
-          <Bug className="size-4 mr-2" />
-          {showDebug ? 'Hide' : 'Show'} Debug
-        </Button>
+      <div className="mb-8">
+        <h1 className="mb-2">Retirement Village Directory</h1>
+        <p className="text-xl text-muted-foreground">
+          Browse {filteredVillages.length} approved retirement villages across Australia
+        </p>
       </div>
-
-      {showDebug && (
-        <div className="mb-8 space-y-6">
-          <RawDatabaseQuery />
-          <FixMissingFacilityType />
-          <FixVictorianPostcodes />
-          <DeduplicateVillages />
-          <FindVictorianDuplicates />
-          <FindVictorianDuplicatesHybrid />
-          <DeleteAllVictorianVillages />
-        </div>
-      )}
 
       <Disclaimer variant="info" className="mb-6">
         <strong>Information Accuracy:</strong> The information displayed in this directory is sourced from retirement village operators, publicly available data, and third-party sources. While we strive to maintain accuracy, RetirePath does not guarantee the completeness or current accuracy of all village details. Entry prices, monthly fees, and availability are subject to change. We strongly recommend contacting villages directly to verify all information and conducting your own due diligence before making any decisions. RetirePath is not responsible for any decisions made based on the information provided in this directory.
