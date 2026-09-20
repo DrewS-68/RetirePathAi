@@ -555,7 +555,7 @@ export function VillageDirectory() {
                       {village.distance.toFixed(1)}km away
                     </Badge>
                   )}
-                                    {village.village_type ? (
+                  {village.village_type ? (
                     <Badge variant="secondary">{village.village_type}</Badge>
                   ) : (
                     <Badge variant="outline" className="text-muted-foreground">
@@ -641,14 +641,14 @@ export function VillageDirectory() {
                 <div className="grid md:grid-cols-2 gap-4">
                   {selectedVillage.operator && (
                     <div>
-                                        <div>
+                      <p className="text-sm text-muted-foreground">Operator</p>
+                      <p>{selectedVillage.operator}</p>
+                    </div>
+                  )}
+                  <div>
                     <p className="text-sm text-muted-foreground">Village Type</p>
                     <p>{selectedVillage.village_type || 'Contact village for details'}</p>
                   </div>
-                      <p className="text-sm text-muted-foreground">Village Type</p>
-                      <p>{selectedVillage.village_type}</p>
-                    </div>
-                  )}
                   {selectedVillage.care_level && (
                     <div>
                       <p className="text-sm text-muted-foreground">Care Level</p>
